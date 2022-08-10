@@ -54,7 +54,8 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: rgba(48, 48, 48, 0.599);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
@@ -67,16 +68,10 @@ img {
   width: 528px;
   min-height: 581px;
   position: absolute;
-  padding: 40px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 300ms linear;
-}
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
 }
 .modal-close {
   width: 30px;
@@ -90,6 +85,11 @@ img {
   right: 8px;
   top: 8px;
   background-color: #ffffff;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .modal-close:hover .back-icon {
   fill: #2196f3;
@@ -162,6 +162,8 @@ img {
 }
 /* Header Classes */
 .header {
+  /* padding-top: 24px;
+  padding-bottom: 25px; */
   border-bottom: 1px solid #ececec;
 }
 .header-logo {
@@ -312,8 +314,8 @@ img {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  transition-property: background-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-btn:hover,
 .order-btn:focus {
@@ -448,8 +450,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   fill: #afb1b8;
@@ -461,6 +462,7 @@ img {
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: #2196f3;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-block {
   padding-top: 30px;
@@ -491,27 +493,23 @@ img {
 }
 .clients-link {
   border: 1px solid #afb1b8;
+  color: #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-icon {
-  fill: #afb1b8;
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-  fill: #2196f3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
+  color: #2196f3;
   border-color: #2196f3;
+}
+.clients-icon {
+  fill: currentColor;
 }
 /* Portfolio Main Classes */
 .portfolio-nav-list {
@@ -539,8 +537,7 @@ img {
   font-family: inherit;
   padding: 6px 22px;
   margin-bottom: 50px;
-  transition-property: backgroud-color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-nav-btn:hover,
 .portfolio-nav-btn:focus {
@@ -571,8 +568,7 @@ img {
 }
 .projects-link {
   text-decoration: none;
-  transition-property: box-shadow;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .projects-text-hover {
   position: relative;
@@ -652,8 +648,7 @@ img {
   color: #ffffff;
   text-decoration: none;
   letter-spacing: 0.03em;
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .map-link:hover,
 .map-link:focus {
@@ -678,8 +673,7 @@ img {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
-  transition-property: color;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-phone:hover,
 .footer-phone:focus {
@@ -720,8 +714,7 @@ img {
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
-  transition-duration: 250ms;
-  transition-timing-function: color cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-con-icon {
   fill: #ffff;
