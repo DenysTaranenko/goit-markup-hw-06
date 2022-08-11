@@ -452,15 +452,18 @@
             </li>
           </ul>
         </div>
-        <div class="subscription container">
-          <label for="footer-email-label" class="footer-label"
-            >Подпишитесь на рассылку</label
-          ><input
-            type="email"
-            id="footer-email"
-            class="footer-email-text"
-          /><button type="submit" class="sub-button"></button>
-        </div>
+          <form class="footer-form">
+          <label for="" class="footer-label"
+            >Подпишитесь на рассылку<input
+              type="text"
+              class="footer-input"
+              placeholder="E-mail"
+            />
+          </label>
+          <button type="button" class="sub-button">
+            Подписаться<svg class="footer-icon" width="24px" height="24px">
+              <use href="./img/icons.svg#icon-send"></use>
+            </svg>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -482,6 +485,9 @@
               name="user-name"
               id="user-name"
             />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./img/icons.svg#icon-person-black"></use>
+              </svg>
           </div>
           <div class="modal-field">
             <label class="modal-form" for="user-phone" class="modal-label"
@@ -493,6 +499,9 @@
               name="user-phone"
               id="user-phone"
             />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./img/icons.svg#icon-phone-black"></use>
+              </svg>
           </div>
           <div class="modal-field">
             <label class="modal-form" for="user-email" class="modal-label"
@@ -504,6 +513,9 @@
               name="user-email"
               id="user-email"
             />
+              <svg class="modal-icon" width="18px" height="18px">
+                <use href="./img/icons.svg#icon-email-black"></use>
+              </svg>
           </div>
           <div class="modal-field">
             <label class="modal-form" for="user-comment">Коментарий</label>
@@ -514,21 +526,25 @@
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="agreement-field">
-            <label class="modal-form" for="agreement"
-              >Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="">Условия договора</a></label
-            >
-            <input
-              class="agreement-input"
+          <label for="agree" class="modal-label-check"
+            ><svg class="modal-check-icon2" width="16px" height="15px">
+              <use href="./img/icons.svg#icon-Vector-2"></use></svg>
+              <input
               type="checkbox"
-              name="agreement"
-              id="agreement"
-            />
-          </div>
-          <div class="button-block">
-            <button class="modal-send-button" type="submit">Отправить</button>
-          </div>
+              class="modal-check"
+              name="agree"
+              id="agree"
+              width="20px"
+              height="15px"
+            /><svg class="modal-check-icon" width="16px" height="15px">
+              <use href="./img/icons.svg#icon-Vector"></use>
+            </svg>
+            <p class="modal-agree">
+              Соглашаюсь с рассылкой и принимаю
+              <a href="./index.html" class="modal-link">Условия договора</a>
+            </p></label
+          >
+          <button type="submit" class="modal-btn">Отправить</button>
         </form>
       </div>
     </div>
