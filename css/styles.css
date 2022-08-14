@@ -66,7 +66,7 @@ img {
   background-color: #ffffff;
   border-radius: 4px;
   width: 528px;
-  min-height: 581px;
+  height: 581px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -107,14 +107,13 @@ img {
   font-size: 20px;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .modal-input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
   padding-left: 42px;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -144,6 +143,7 @@ img {
   border-radius: 4px;
   padding: 12px 16px;
   margin-top: 4px;
+  margin-bottom: 10px;
   resize: none;
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -159,16 +159,29 @@ img {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-label-check {
-  margin-bottom: 30px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  position: relative;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
 }
 .modal-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
   color: #2196f3;
+  padding-left: 4px;
 }
 .modal-check {
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
   visibility: hidden;
 }
 .modal-comment:focus {
@@ -179,14 +192,14 @@ img {
   position: absolute;
   left: 12px;
   visibility: hidden;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-right: 7px;
 }
 .modal-check-icon2 {
   position: absolute;
   left: 12px;
   visibility: visible;
-  opacity: 1;
+  margin-right: 7px;
+  transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-icon {
   position: absolute;
@@ -519,7 +532,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   fill: #afb1b8;
