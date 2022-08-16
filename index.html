@@ -523,21 +523,24 @@
             ></textarea>
           </div>
           <div class="modal-field">
-            <label for="agree" class="modal-label-check"
-              ><svg class="modal-check-icon2" width="16px" height="15px">
-                <use href="./img/icons.svg#icon-Vector-2"></use>
-              </svg>
-              <input
-                type="checkbox"
-                class="modal-check"
-                name="agree"
-                id="agree"
-              /><svg class="modal-check-icon" width="16px" height="15px">
-                <use href="./img/icons.svg#icon-Vector"></use>
-              </svg>
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="modal-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="13" height="10">
+                  <use href="./img/icons.svg#icon-check"></use>
+                </svg>
+              </span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="./index.html" class="modal-link"> Условия договора</a>
-            </label>
+              <a href="./index.html" class="modal-link">
+                Условия договора</a
+              ></label
+            >
           </div>
           <button type="submit" class="modal-btn">Отправить</button>
         </form>
